@@ -1,1 +1,102 @@
-<p>header works!</p>
+<!-- Mobile Navbar -->
+<nav class="navbar navbar-dark d-lg-none fixed-top">
+    <div class="container-fluid">
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            (click)="toggleMenu()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+
+    <div class="collapse navbar-collapse"
+        [class.show]="isOpen">
+
+        <ul class="navbar-nav text-left py-3">
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}"
+                    (click)="closeMenu()">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink="/about"
+                    routerLinkActive="active"
+                    (click)="closeMenu()">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink="/projects"
+                    routerLinkActive="active"
+                    (click)="closeMenu()">
+                    <i class="fas fa-code"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink="/skills"
+                    routerLinkActive="active"
+                    (click)="closeMenu()">
+                    <i class="fas fa-lightbulb"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink="/resume"
+                    routerLinkActive="active"
+                    (click)="closeMenu()">
+                    <i class="fas fa-file"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                    routerLink="/contact"
+                    routerLinkActive="active"
+                    (click)="closeMenu()">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- Desktop Sidebar -->
+<div class="sidebar d-none d-lg-block">
+
+    <nav class="nav flex-column">
+        <a routerLink routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact:true}">
+            <i class="fas fa-home"></i>
+        </a>
+        <a routerLink="/about" routerLinkActive="active">
+            <i class="fas fa-user"></i>
+        </a>
+        <a routerLink="/projects" routerLinkActive="active">
+            <i class="fas fa-code"></i>
+        </a>
+        <a routerLink="/skills" routerLinkActive="active">
+            <i class="fas fa-lightbulb"></i>
+        </a>
+        <a routerLink="/resume" routerLinkActive="active">
+            <i class="fas fa-file"></i>
+        </a>
+        <a routerLink="/contact" routerLinkActive="active">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </nav>
+</div>
