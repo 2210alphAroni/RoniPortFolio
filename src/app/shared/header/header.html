@@ -23,6 +23,7 @@
                     [routerLinkActiveOptions]="{exact:true}"
                     (click)="closeMenu()">
                     <i class="fas fa-home"></i>
+                    <span class="nav-text">Home</span>
                 </a>
             </li>
 
@@ -32,6 +33,7 @@
                     routerLinkActive="active"
                     (click)="closeMenu()">
                     <i class="fas fa-user"></i>
+                    <span class="nav-text">About</span>
                 </a>
             </li>
 
@@ -41,6 +43,7 @@
                     routerLinkActive="active"
                     (click)="closeMenu()">
                     <i class="fas fa-code"></i>
+                    <span class="nav-text">Projects</span>
                 </a>
             </li>
 
@@ -50,6 +53,7 @@
                     routerLinkActive="active"
                     (click)="closeMenu()">
                     <i class="fas fa-lightbulb"></i>
+                    <span class="nav-text">Skills</span>
                 </a>
             </li>
 
@@ -59,6 +63,7 @@
                     routerLinkActive="active"
                     (click)="closeMenu()">
                     <i class="fas fa-file"></i>
+                    <span class="nav-text">Resume</span>
                 </a>
             </li>
 
@@ -68,6 +73,7 @@
                     routerLinkActive="active"
                     (click)="closeMenu()">
                     <i class="fas fa-envelope"></i>
+                    <span class="nav-text">Contact</span>
                 </a>
             </li>
 
@@ -79,24 +85,30 @@
 <div class="sidebar d-none d-lg-block">
 
     <nav class="nav flex-column">
-        <a routerLink routerLinkActive="active"
+        <a routerLink routerLinkActive="active" class="nav-item"
             [routerLinkActiveOptions]="{exact:true}">
             <i class="fas fa-home"></i>
+            <span class="nav-text">Home</span>
         </a>
-        <a routerLink="/about" routerLinkActive="active">
+        <a routerLink="/about" routerLinkActive="active" class="nav-item">
             <i class="fas fa-user"></i>
+            <span class="nav-text">About</span>
         </a>
-        <a routerLink="/projects" routerLinkActive="active">
+        <a routerLink="/projects" routerLinkActive="active" class="nav-item">
             <i class="fas fa-code"></i>
+            <span class="nav-text">Projects</span>
         </a>
-        <a routerLink="/skills" routerLinkActive="active">
+        <a routerLink="/skills" routerLinkActive="active" class="nav-item">
             <i class="fas fa-lightbulb"></i>
+            <span class="nav-text">Skills</span>
         </a>
-        <a routerLink="/resume" routerLinkActive="active">
+        <a routerLink="/resume" routerLinkActive="active" class="nav-item">
             <i class="fas fa-file"></i>
+            <span class="nav-text">Resume</span>
         </a>
-        <a routerLink="/contact" routerLinkActive="active">
+        <a routerLink="/contact" routerLinkActive="active" class="nav-item">
             <i class="fas fa-envelope"></i>
+            <span class="nav-text">Contact</span>
         </a>
     </nav>
 </div>

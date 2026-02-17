@@ -12,6 +12,44 @@
   padding-top: 170px;
 }
 
+.nav-item {
+  position: relative;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.nav-item i {
+  transition: 0.7s;
+}
+
+.nav-item:hover i {
+  transform: scale(1.1);
+}
+
+/* Hide text by default */
+.nav-text {
+  position: absolute;
+  left: 60px;
+  background: #00c6ff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 0.3s ease;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+/* Show text on hover */
+.nav-item:hover .nav-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .logo {
   text-align: center;
   margin-bottom: 40px;
@@ -45,9 +83,9 @@
   color: white;
 }
 
-.navbar-nav{
-    width: 100%;
-    padding-left: 30px;
+.navbar-nav {
+  width: 100%;
+  padding-left: 30px;
 }
 
 /* Mobile spacing fix */
