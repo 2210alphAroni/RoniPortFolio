@@ -1,0 +1,139 @@
+/* Background same as About */
+.skills-section {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-line {
+  width: 80px;
+  height: 4px;
+  background: #00c6ff;
+  border-radius: 5px;
+}
+
+.cube-heading {
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+/* Cube Wrapper */
+.cube-wrapper {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Cube */
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 10s infinite linear;
+}
+
+/* Cube Faces */
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 2px solid #00c6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Positioning faces */
+.front  { transform: rotateY(0deg) translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+/* Animation */
+@keyframes rotateCube {
+  0%   { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Hover Effect */
+.cube:hover {
+  animation-play-state: paused;
+}
+
+.backend-cube {
+  animation: rotateCubeReverse 12s infinite linear;
+}
+
+/* Reverse Rotation */
+@keyframes rotateCubeReverse {
+  0%   { transform: rotateX(360deg) rotateY(360deg); }
+  100% { transform: rotateX(0deg) rotateY(0deg); }
+}
+
+
+
+/* Scroll Button Wrapper */
+.scroll-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Oval Button */
+.scroll-btn {
+  width: 80px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+  background: #00c6ff;
+  border-color: #00c6ff;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.5);
+}
+
+/* Arrow Animation */
+.scroll-btn i {
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
