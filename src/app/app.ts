@@ -8,4 +8,4 @@ import { Header } from './shared/header/header';
   imports: [RouterOutlet, Header],
   templateUrl: './app.html',
 })
-export class App {}
+export class App{}
