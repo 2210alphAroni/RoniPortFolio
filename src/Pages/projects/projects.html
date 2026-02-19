@@ -1,1 +1,49 @@
-<p>projects works!</p>
+<section class="projects-section d-flex align-items-center">
+    <div class="container">
+
+        <h2 class="section-title text-center">My Projects</h2>
+        <div class="title-line mx-auto mb-5"></div>
+
+        <div class="row g-5">
+
+            <div class="col-lg-4 col-md-6" *ngFor="let project of projects">
+
+                <div class="project-card">
+
+                    <!-- Image -->
+                    <div class="project-image">
+                        <img [src]="project.image" alt="{{ project.title }}">
+
+                        <div class="project-overlay">
+                            <h5>{{ project.title }}</h5>
+                            <p>{{ project.tech }}</p>
+
+                            <div class="project-buttons">
+                                <a [href]="project.live"
+                                    target="_blank">Live</a>
+                                <a [href]="project.github"
+                                    target="_blank">Code</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Description -->
+                    <div class="project-content">
+                        <p>{{ project.description }}</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-btn-wrapper">
+            <a routerLink="/skills" class="scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
