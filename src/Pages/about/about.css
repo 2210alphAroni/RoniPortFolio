@@ -1,0 +1,133 @@
+/* Background */
+.about-section {
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text */
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #dcdcdc;
+}
+
+.about-text span {
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+/* Stats Card */
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00c6ff;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Image */
+.image-wrapper {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.about-image {
+  width: 300px;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    width: 250px;
+  }
+}
+
+
+/* Scroll Button Wrapper */
+.scroll-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Oval Button */
+.scroll-btn {
+  width: 80px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+  background: #00c6ff;
+  border-color: #00c6ff;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.5);
+}
+
+/* Arrow Animation */
+.scroll-btn i {
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}

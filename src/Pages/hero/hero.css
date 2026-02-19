@@ -201,3 +201,51 @@
   font-weight: bold;
   margin: 10px 0;
 }
+
+
+/* Scroll Button Wrapper */
+.scroll-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Oval Button */
+.scroll-btn {
+  width: 80px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect */
+.scroll-btn:hover {
+  background: #00c6ff;
+  border-color: #00c6ff;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.5);
+}
+
+/* Arrow Animation */
+.scroll-btn i {
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
