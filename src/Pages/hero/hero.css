@@ -249,3 +249,89 @@
     transform: translateY(6px);
   }
 }
+
+
+/* ============================= */
+/* ENTRY ANIMATIONS */
+/* ============================= */
+
+/* Hello - Left to Right */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  animation: slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Name - Right to Left */
+.slide-right {
+  opacity: 0;
+  transform: translateX(80px);
+  animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Buttons Zoom */
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.6);
+  animation: zoomIn 0.8s ease forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Social Links Bounce from Top */
+.bounce-top {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: bounceTop 0.8s ease forwards;
+}
+
+@keyframes bounceTop {
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Certificate from Right */
+.slide-certificate {
+  opacity: 0;
+  transform: translateX(120px);
+  animation: slideCert 1.2s ease forwards;
+}
+
+@keyframes slideCert {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Delay Helpers */
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.0s; }

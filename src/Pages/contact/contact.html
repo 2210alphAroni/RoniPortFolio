@@ -1,61 +1,64 @@
 <section class="contact-section d-flex align-items-center">
     <div class="container">
 
-        <h2 class="section-title text-center">Contact Me</h2>
-        <div class="title-line mx-auto mb-5"></div>
+        <!-- Title -->
+        <h2 class="section-title text-center slide-left">Contact Me</h2>
+        <div class="title-line mx-auto mb-5 slide-left delay-1"></div>
 
         <div class="row align-items-center g-5">
 
             <!-- Left Info -->
-            <div class="col-lg-5 text-center text-lg-start">
+            <div class="col-lg-5 text-center text-lg-start fade-up delay-1">
 
-                <div class="contact-info-card">
+                <div class="contact-info-card zoom-in delay-2">
                     <h4>Let’s Connect</h4>
-                    <div class="info-item">
+
+                    <div class="info-item bounce-top delay-1">
                         <i class="fas fa-envelope"></i>
                         <span>nabinuri80@gmail.com</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-2">
                         <i class="fab fa-linkedin"></i>
                         <span>linkedin.com/in/md-nabinur-islam-roni</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-3">
                         <i class="fab fa-github"></i>
                         <span>github.com/2210alphAroni</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-1">
                         <i class="fas fa-phone"></i>
                         <span>+8801727687830</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-2">
                         <i class="fab fa-whatsapp"></i>
                         <span>+8801727687830</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-3">
                         <i class="fas fa-calendar-alt"></i>
                         <span>Available for Work</span>
                     </div>
 
-                    <div class="info-item">
+                    <div class="info-item bounce-top delay-2">
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Dhaka, Bangladesh</span>
                     </div>
+
                 </div>
 
             </div>
 
             <!-- Right Form -->
-            <div class="col-lg-7">
+            <div class="col-lg-7 fade-up delay-2">
 
-                <div class="contact-form-card">
+                <div class="contact-form-card zoom-in delay-3">
                     <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
 
-                        <div class="mb-4">
+                        <div class="mb-4 fade-up delay-1">
                             <input type="text"
                                 name="name"
                                 [(ngModel)]="contactData.name"
@@ -64,7 +67,7 @@
                                 class="form-control custom-input">
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-4 fade-up delay-2">
                             <input type="email"
                                 name="email"
                                 [(ngModel)]="contactData.email"
@@ -73,7 +76,7 @@
                                 class="form-control custom-input">
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-4 fade-up delay-3">
                             <textarea rows="5"
                                 name="message"
                                 [(ngModel)]="contactData.message"
@@ -83,7 +86,7 @@
                         </div>
 
                         <button type="submit"
-                            class="send-btn"
+                            class="send-btn zoom-in delay-3"
                             [disabled]="!contactForm.valid">
                             Send Message
                         </button>
@@ -95,10 +98,11 @@
 
         </div>
 
-        <div class="scroll-btn-wrapper">
+        <div class="scroll-btn-wrapper fade-up delay-3">
             <a routerLink="/" class="scroll-btn">
                 <i class="fas fa-chevron-down"></i>
             </a>
         </div>
+
     </div>
 </section>
