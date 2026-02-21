@@ -95,3 +95,20 @@
   }
 
 }
+
+
+.navbar-toggler {
+  border: none;
+  font-size: 22px;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler i.fa-angle-up {
+  transform: rotate(180deg);
+}

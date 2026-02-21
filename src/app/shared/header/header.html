@@ -6,7 +6,12 @@
             class="navbar-toggler"
             type="button"
             (click)="toggleMenu()">
-            <span class="navbar-toggler-icon"></span>
+
+            <i
+                class="fa-solid"
+                [ngClass]="isOpen ? 'fa-angle-up' : 'fa-angle-down'">
+            </i>
+
         </button>
 
     </div>
