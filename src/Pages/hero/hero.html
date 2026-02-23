@@ -16,11 +16,13 @@
         </h4>
 
         <div class="mt-4 hero-buttons">
-          <a routerLink="/projects" class="btn btn-primary me-3 zoom-in delay-1">
+          <a routerLink="/projects"
+            class="btn btn-primary me-3 zoom-in delay-1">
             View My Work
           </a>
 
-          <a routerLink="/contact" class="btn btn-outline-light zoom-in delay-2">
+          <a routerLink="/contact"
+            class="btn btn-outline-light zoom-in delay-2">
             Get In Touch
           </a>
         </div>
@@ -86,6 +88,79 @@
           </div>
 
         </div>
+
+        <!-- Mobile More Button -->
+        <div class="mb-3 mt-4" *ngIf="!showMore">
+          <button
+            class="btn btn-outline-light w-100"
+            (click)="showCertificates()">
+            More Certificates
+          </button>
+        </div>
+
+        <div *ngIf="showMore">
+          <!-- Certificate 2 (Internship) -->
+          <div class="certificate-card mt-4">
+
+            <img
+              src="/assets/img/_Intern  Certificate_M_ Md. Nabinur Islam Roni_page-0001.jpg"
+              class="img-fluid certificate-image"
+              alt="Internship Certificate">
+
+            <div class="certificate-overlay">
+              <div class="certificate-content">
+                <h4>CERTIFICATE OF INTERNSHIP</h4>
+
+                <p>This certifies that</p>
+
+                <h5>Md. Nabinur Islam Roni</h5>
+
+                <p>
+                  successfully completed a
+                  <strong>Software Engineering Internship</strong>
+                  at TechStdio (Oct 2025 – Jan 2026).
+                </p>
+
+                <small>
+                  Supervisor: Munshi Faysal Ahmed
+                </small>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Grameenphone Certificate -->
+          <div class="certificate-card mt-4">
+
+            <img
+              src="/assets/img/certificate-english-for-daily-use.jpg"
+              class="img-fluid certificate-image"
+              alt="Grameenphone Certificate">
+
+            <div class="certificate-overlay">
+              <div class="certificate-content">
+                <h4>CERTIFICATE OF EXCELLENCE</h4>
+
+                <p>This certificate goes to</p>
+
+                <h5>Md. Nabinur Islam Roni</h5>
+
+                <p>
+                  for successfully completing
+                  <strong>English for Daily Use</strong>
+                  under Grameenphone Academy.
+                </p>
+
+                <small>
+                  Issued: 22 February 2026 <br>
+                  CEO: Yasir Azman
+                </small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
     </div>

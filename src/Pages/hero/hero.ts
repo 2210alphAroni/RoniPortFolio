@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
@@ -57,5 +57,11 @@ export class Hero implements OnInit {
   onMouseMove(event: MouseEvent) {
     this.mouseX = (event.clientX / window.innerWidth) * 30;
     this.mouseY = (event.clientY / window.innerHeight) * 30;
+  }
+
+  showMore = false;
+
+  showCertificates() {
+    this.showMore = true;
   }
 }
