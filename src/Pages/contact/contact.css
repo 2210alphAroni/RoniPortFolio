@@ -212,3 +212,9 @@
 .delay-1 { animation-delay: 0.6s; }
 .delay-2 { animation-delay: 0.8s; }
 .delay-3 { animation-delay: 1.0s; }
+
+/* for map */
+.map-card {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
