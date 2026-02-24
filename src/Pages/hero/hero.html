@@ -12,7 +12,12 @@
         </h1>
 
         <h4 class="hero-role">
-          <span class="typing">{{ currentText }}</span>
+          <div class="role-slider">
+            <div class="role-track">
+              <span *ngFor="let role of roles">{{ role }}</span>
+              <span *ngFor="let role of roles">{{ role }}</span>
+            </div>
+          </div>
         </h4>
 
         <div class="mt-4 hero-buttons">
