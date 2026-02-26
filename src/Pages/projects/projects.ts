@@ -27,6 +27,14 @@ export class Projects {
       image: '/assets/img/favicon-img.png',
       github: 'https://github.com/2210alphAroni/Portfolio',
       live: 'https://my-portfolio-7kuk.onrender.com/'
+    },
+    {
+      title: 'Device Zone E-commerce Platform',
+      tech: 'HTML, CSS, JavaScript, Django',
+      description: 'E-commerce platform for electronics with user authentication.',
+      image: '/assets/img/aboutpagephoto-removebg-preview.png',
+      github: 'https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website',
+      live: 'https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website'
     }
   ];
 

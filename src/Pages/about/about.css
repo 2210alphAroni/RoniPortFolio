@@ -155,7 +155,7 @@
 .slide-right {
   opacity: 0;
   transform: translateX(100px);
-  animation: slideRight 1.2s ease forwards;
+  animation: slideRight 2.5s ease forwards;
 }
 
 @keyframes slideRight {
