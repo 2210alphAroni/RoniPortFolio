@@ -35,6 +35,15 @@ export class Projects {
       image: '/assets/img/aboutpagephoto-removebg-preview.png',
       github: 'https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website',
       live: 'https://github.com/2210alphAroni/Device-Zone-E-Commerce-Website'
+    },
+    {
+      title: "Ramadan Tracker – Real-Time Islamic Productivity Web App",
+      tech: ["Next.js", "Tailwind CSS", "JavaScript", "REST API"],
+      description:
+        "A real-time Ramadan productivity tracking application that helps users monitor fasting, prayer, Quran reading, and daily spiritual goals with live Sehri and Iftar countdown.",
+      image: "/assets/img/Ramadantrackerapp.PNG",
+      github: "https://github.com/2210alphAroni/Ramadan-App",
+      live: "https://premiumramadantracker.netlify.app/"
     }
   ];
 
