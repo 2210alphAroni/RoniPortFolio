@@ -44,6 +44,15 @@ export class Projects {
       image: "/assets/img/Ramadantrackerapp.PNG",
       github: "https://github.com/2210alphAroni/Ramadan-App",
       live: "https://premiumramadantracker.netlify.app/"
+    },
+    {
+      title: "Solar Harvest – Smart Farmer Web Application",
+      tech: ["Next.js", "Tailwind CSS", "JavaScript"],
+      description:
+        "A modern agriculture-focused web application designed to support farmers with smart farming insights, solar-powered solutions awareness, and responsive dashboard interface for sustainable crop management.",
+      image: "/assets/img/solar-harvest-web-app.png",
+      github: "https://github.com/2210alphAroni/Farmer-App",
+      live: "https://solarharvest.netlify.app/"
     }
   ];
 
