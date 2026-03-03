@@ -43,7 +43,7 @@ export class Projects {
         "A real-time Ramadan productivity tracking application that helps users monitor fasting, prayer, Quran reading, and daily spiritual goals with live Sehri and Iftar countdown.",
       image: "/assets/img/Ramadantrackerapp.PNG",
       github: "https://github.com/2210alphAroni/Ramadan-App",
-      live: "https://premiumramadantracker.netlify.app/"
+      live: "https://ramadantracker-wcn0.onrender.com/"
     },
     {
       title: "Solar Harvest – Smart Farmer Web Application",
