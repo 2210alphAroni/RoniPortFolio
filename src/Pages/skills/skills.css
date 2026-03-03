@@ -1,11 +1,18 @@
-/* Background same as About */
+/* ============================= */
+/* SECTION BACKGROUND */
+/* ============================= */
+
 .skills-section {
   min-height: 100vh;
   background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
   color: #fff;
+  padding: 80px 0;
 }
 
-/* Title */
+/* ============================= */
+/* TITLE */
+/* ============================= */
+
 .section-title {
   font-size: 2.8rem;
   font-weight: 800;
@@ -22,11 +29,13 @@
 }
 
 .cube-heading {
-  color: #00c6ff;
   font-weight: 600;
 }
 
-/* Cube Wrapper */
+/* ============================= */
+/* CUBE WRAPPER */
+/* ============================= */
+
 .cube-wrapper {
   perspective: 1000px;
   display: flex;
@@ -34,33 +43,54 @@
   align-items: center;
 }
 
+/* ============================= */
+/* CUBE STRUCTURE */
+/* ============================= */
 
-/* Cube */
 .cube {
   width: 200px;
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotateCube 10s infinite linear;
+  animation: rotateCube 12s infinite linear;
 }
 
-/* Cube Faces */
+.backend-cube {
+  animation: rotateCubeReverse 14s infinite linear;
+}
+
+/* ============================= */
+/* CUBE FACES (CLEAN VERSION) */
+/* ============================= */
+
 .face {
   position: absolute;
   width: 200px;
   height: 200px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  border: 2px solid #00c6ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 18px;
+
+  /* Clean transparent look */
+  background: transparent;
+  border: none;
+  backdrop-filter: none;
+  box-shadow: none;
+
+  font-size: 45px;
   color: #fff;
+  transition: 0.3s ease;
 }
 
-/* Positioning faces */
+/* Hover scale only */
+.face:hover {
+  transform: scale(1.08);
+}
+
+/* ============================= */
+/* FACE POSITIONING */
+/* ============================= */
+
 .front  { transform: rotateY(0deg) translateZ(100px); }
 .back   { transform: rotateY(180deg) translateZ(100px); }
 .right  { transform: rotateY(90deg) translateZ(100px); }
@@ -68,37 +98,35 @@
 .top    { transform: rotateX(90deg) translateZ(100px); }
 .bottom { transform: rotateX(-90deg) translateZ(100px); }
 
-/* Animation */
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
 @keyframes rotateCube {
   0%   { transform: rotateX(0deg) rotateY(0deg); }
   100% { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-/* Hover Effect */
-.cube:hover {
-  animation-play-state: paused;
-}
-
-.backend-cube {
-  animation: rotateCubeReverse 12s infinite linear;
-}
-
-/* Reverse Rotation */
 @keyframes rotateCubeReverse {
   0%   { transform: rotateX(360deg) rotateY(360deg); }
   100% { transform: rotateX(0deg) rotateY(0deg); }
 }
 
+/* Pause animation on hover */
+.cube:hover {
+  animation-play-state: paused;
+}
 
+/* ============================= */
+/* SCROLL BUTTON */
+/* ============================= */
 
-/* Scroll Button Wrapper */
 .scroll-btn-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 60px;
 }
 
-/* Oval Button */
 .scroll-btn {
   width: 80px;
   height: 50px;
@@ -114,7 +142,6 @@
   overflow: hidden;
 }
 
-/* Hover Effect */
 .scroll-btn:hover {
   background: #00c6ff;
   border-color: #00c6ff;
@@ -123,27 +150,19 @@
   box-shadow: 0 10px 25px rgba(0, 198, 255, 0.5);
 }
 
-/* Arrow Animation */
 .scroll-btn i {
   animation: bounce 1.5s infinite;
 }
 
-/* Bounce Animation */
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(6px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
 }
 
-
 /* ============================= */
-/* ENTRY ANIMATIONS (CONSISTENT) */
+/* ENTRY ANIMATIONS */
 /* ============================= */
 
-/* Slide from Left */
 .slide-left {
   opacity: 0;
   transform: translateX(-80px);
@@ -157,7 +176,6 @@
   }
 }
 
-/* Fade Up */
 .fade-up {
   opacity: 0;
   transform: translateY(50px);
@@ -171,7 +189,6 @@
   }
 }
 
-/* Zoom In */
 .zoom-in {
   opacity: 0;
   transform: scale(0.7);
@@ -185,7 +202,8 @@
   }
 }
 
-/* Delay Helpers */
+/* Animation Delays */
 .delay-1 { animation-delay: 0.6s; }
 .delay-2 { animation-delay: 0.8s; }
-.delay-3 { animation-delay: 1.0s; }
+.delay-3 { animation-delay: 1s; }
+.delay-4 { animation-delay: 1.2s; }
