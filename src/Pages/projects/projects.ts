@@ -21,6 +21,15 @@ export class Projects {
       live: 'https://movbd.vercel.app',
     },
     {
+      title: 'TicketKati - Bangladesh Bus Ticket System',
+      tech: 'React',
+      description:
+        "Bangladesh's Number one bus ticket syatem website.",
+      image: '/assets/img/ticketkati.png',
+      github: 'https://github.com/2210alphAroni/ticketkati',
+      live: 'https://ticketkati.vercel.app',
+    },
+    {
       title: 'Photography Service Booking System',
       tech: 'ASP.NET Core, Web API, Dapper',
       description: 'Online booking system with payment integration.',
@@ -29,12 +38,12 @@ export class Projects {
       live: 'https://github.com/2210alphAroni/PSBSProject',
     },
     {
-      title: 'My Portfolio',
-      tech: 'HTML, CSS, JavaScript',
-      description: 'Modern animated portfolio with 3D skills cube.',
-      image: '/assets/img/favicon-img.png',
-      github: 'https://github.com/2210alphAroni/Portfolio',
-      live: 'https://my-portfolio-7kuk.onrender.com/',
+      title: 'Grabix - Universal Media Downloader',
+      tech: 'Next js, Node js, Express js',
+      description: 'A universal downloader allow 100+ sites.',
+      image: '/assets/img/1774671052467.jpg',
+      github: 'https://github.com/2210alphAroni/grabix',
+      live:'https://grabix-one.vercel.app',
     },
     {
       title: 'Device Zone E-commerce Platform',
