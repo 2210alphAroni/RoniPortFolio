@@ -12,6 +12,15 @@ import { RouterModule } from '@angular/router';
 export class Projects {
   projects = [
     {
+      name: 'Portfolio Builder',
+      tech: 'React, Vite, PWA, Vercel',
+      description:
+        'A free, offline-ready portfolio builder with 20 handcrafted themes, live preview, dark/light mode, multi-language support (EN/বাং/हि), and one-click HTML download.',
+      image: '/assets/img/portfoliobuilder.png',
+      github: 'https://github.com/2210alphAroni/PortfolioBUILDER',
+      live: 'https://portfoliobuilder-eta.vercel.app',
+    },
+    {
       title: 'MovBD - Movie Platform',
       tech: 'React, Node.js, Express, MongoDB Atlas',
       description:
@@ -23,8 +32,7 @@ export class Projects {
     {
       title: 'TicketKati - Bangladesh Bus Ticket System',
       tech: 'React',
-      description:
-        "Bangladesh's Number one bus ticket syatem website.",
+      description: "Bangladesh's Number one bus ticket syatem website.",
       image: '/assets/img/ticketkati.png',
       github: 'https://github.com/2210alphAroni/ticketkati',
       live: 'https://ticketkati.vercel.app',
@@ -43,7 +51,7 @@ export class Projects {
       description: 'A universal downloader allow 100+ sites.',
       image: '/assets/img/1774671052467.jpg',
       github: 'https://github.com/2210alphAroni/grabix',
-      live:'https://grabix-one.vercel.app',
+      live: 'https://grabix-one.vercel.app',
     },
     {
       title: 'Device Zone E-commerce Platform',
